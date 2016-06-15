@@ -18,5 +18,18 @@
             <strong>There are no categories present.</strong>
        {% endif %}
 
+       <h3>Most viewed 5 pages:</h3>
+
+       {% if pages %}
+            <ul>
+                {% for page in pages %}
+                <!-- Following line changed to add an HTML hyperlink -->
+                <li><a href="{{ page.url }}">{{ page.title }}</a>-{{ page.views }} hits </li>
+                {% endfor %}
+            </ul>
+       {% else %}
+            <strong>There are no page present.</strong>
+       {% endif %}
+
     </body>
 </html>
