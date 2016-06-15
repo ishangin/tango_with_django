@@ -70,7 +70,8 @@ def alter_cat(name_cat, views, likes):
 # Start execution here!
 if __name__ == '__main__':
     print("Starting Rango population script...")
-#    populate()
-    alter_cat("Python",views=128,likes=64)
-    alter_cat("Django",views=64,likes=32)
-    alter_cat("Other Frameworks",views=32,likes=16)
+    populate()
+    #alter_cat("Python",views=128,likes=64)
+    #alter_cat("Django",views=64,likes=32)
+    #alter_cat("Other Frameworks",views=32,likes=16)
+    
