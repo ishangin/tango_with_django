@@ -7,9 +7,11 @@
     <body>
         <h1>Add a Page</h1>
 
-        <form id="page_form" method="post" action="/rango/add_page/">
+        <form id="page_form" method="post" action="">
+
 
             {% csrf_token %}
+            
             {% for hidden in form.hidden_fields %}
                 {{ hidden }}
             {% endfor %}
